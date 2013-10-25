@@ -1,0 +1,74 @@
+.opacityWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 800;
+        opacity: 0;
+        display: none;
+        color: rgba(255,255,255,0.7);
+        background-color: rgba(0,0,0,0.5);
+    }
+	.contents-data {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	#planttrees-bg {
+		position: absolute;
+		width: 100%;
+		height: 80px;
+		left: 0;
+		bottom: -60px;
+		background: url(images/plants.png) repeat-x 0 0px;
+		z-index: 3;
+		pointer-events: none;
+	}
+	#planttrees {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+	}
+	#planttrees-bt {
+		position: absolute;
+		width: 69px;
+		height: 69px;
+		top: 14px;
+		right: 14px;
+		background: url(images/plants-bt.png) no-repeat 0 0px;
+		cursor: pointer;
+		z-index: 7;
+	}
+	.contents-guide {
+		position: absolute;
+		z-index: 80;
+		display: none;
+	}
+    .guide-mouse {
+        width: 29px;
+        height: 35px;
+        background: url(images/guide.png);
+        float: left;
+    }
+    .guide-tooltip {
+        height: 20px;
+        -moz-border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -khtml-border-radius: 13px;
+        border-radius: 13px;
+        background-color: #000;
+        float: left;
+        margin: 6px 5px 0 5px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        padding: 6px 10px 0 10px;
+        float: left;
+    }

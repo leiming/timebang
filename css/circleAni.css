@@ -1,0 +1,149 @@
+#circleCon {
+    background:url(../images/circle_load.png) no-repeat -72px -5px;
+    width:62px;
+    height:62px;
+    position: relative;
+    margin: -6px 0 0 -6px;
+    display: none;
+}
+
+#circleCon-loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    background: url(../images/buttons.png) no-repeat;
+    display: none;
+}
+#circleCon-loading-icon {
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    height: 1px;
+    left: 50%;
+    top: 50%;
+    margin: -1px 0 0 -1px;
+}
+.circleCon-loading-white {
+    background-position: 0px -510px !important;
+}
+.circleCon-loading-black {
+    background-position: -51px -510px !important;
+}
+
+.circleCon-white {
+    background-position: -72px -5px !important;
+}
+.circleCon-black {
+    background-position: -72px -72px !important;
+}
+
+.circle-side-l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:31px;
+    height:62px;
+    overflow: hidden;
+    display:none;
+    z-index: 1;
+}
+
+.circle-side-r {
+    position: absolute;
+    left: 31px;
+    top: 0;
+    width:31px;
+    height:62px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.circle-side-r-static {
+    position: absolute;
+    left: 31px;
+    top: 0;
+    width:31px;
+    height:62px;
+    overflow: hidden;
+    z-index: 3;
+    background:url(../images/circle_load.png) no-repeat -36px -5px;
+    display: none;
+}
+.circleCon-white .circle-side-r-static {
+    background-position: -36px -5px !important;
+}
+.circleCon-black .circle-side-r-static {
+    background-position: -36px -72px !important;
+}
+
+.circle-half-r {
+    left: -31px !important;
+}
+
+
+
+.circle-ani{
+
+    height:62px;
+    width:62px;
+    position:relative;
+    overflow:hidden;
+    float:left;
+}
+
+.circle-ani .rotate{
+    position:absolute;
+    width:62px;
+    height:62px;
+    top:0;
+    left:0;
+}
+
+.rotate.right{
+    display:none;
+    z-index:11;
+}
+
+.circle-ani .circle-bg, .circle-ani .front{
+    width:31px;
+    height:62px;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+}
+
+.circle-ani .circle-bg.left{
+    left:0;
+}
+.rot-circle .circle-bg.left{
+    background:url(../images/circle_load.png) no-repeat -5px -5px;
+}
+.circle-ani .circle-bg.right{
+    left:31px;
+}
+.rot-circle .circle-bg.right{
+    background:url(../images/circle_load.png) no-repeat -36px -5px;
+}
+
+.circle-ani .front.left{
+    left:0;
+    z-index:10;
+}
+
+.circleCon-white .rot-circle .circle-bg.left {
+    background-position: -5px -5px !important;
+}
+.circleCon-black .rot-circle .circle-bg.left {
+    background-position: -5px -72px !important;
+}
+
+.circleCon-white .rot-circle .circle-bg.right {
+    background-position: -36px -5px !important;
+}
+.circleCon-black .rot-circle .circle-bg.right {
+    background-position: -36px -72px !important;
+}

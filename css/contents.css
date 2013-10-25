@@ -1,0 +1,102 @@
+#contents {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    overflow: hidden;
+    /* fixed ff 3d bug */
+    -moz-transform-style: preserve-3d;
+}
+
+#detail-bg {
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: none;
+}
+
+
+#detail-con {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#mask {
+    width: 220px;
+    height: 310px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+#poster-con {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: none;
+    pointer-events:none;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+
+
+#poster-big {
+    position: absolute;
+    z-index: 2;
+    pointer-events:none;
+}
+
+#load-con {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 56;
+    left: 0;
+    top: 0;
+    display: none;
+    overflow: hidden;
+}
+
+
+
+.contents-data {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.guide-mouse {
+    width: 29px;
+    height: 35px;
+    background: url(../images/guide.png);
+    float: left;
+}
+.guide-tooltip {
+    height: 20px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -khtml-border-radius: 13px;
+    border-radius: 13px;
+    background-color: #000;
+    float: left;
+    margin:6px 5px 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    padding: 6px 10px 0 10px;
+    float: left;
+}

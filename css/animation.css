@@ -1,0 +1,30 @@
+.showme {
+    opacity: 1 !important;
+    transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+}
+
+.show-pantone {
+    opacity: 1 !important;
+    transition: opacity 0.5s cubic-bezier(.55,.055,.675,.19);
+    -moz-transition: opacity 0.5s cubic-bezier(.55,.055,.675,.19);
+    -webkit-transition: opacity 0.5s cubic-bezier(.55,.055,.675,.19);
+    -o-transition: opacity 0.5s cubic-bezier(.55,.055,.675,.19);
+}
+
+.show-fwa {
+    opacity: 1 !important;
+    transition: opacity 0.5s cubic-bezier(.39,.575,.565,1);
+    -moz-transition: opacity 0.5s cubic-bezier(.39,.575,.565,1);
+    -webkit-transition: opacity 0.5s cubic-bezier(.39,.575,.565,1);
+    -o-transition: opacity 0.5s cubic-bezier(.39,.575,.565,1);
+}
+.hide-fwa {
+    opacity: 0 !important;
+    transition: opacity 0.5s cubic-bezier(.47,0,.745,.715);
+    -moz-transition: opacity 0.5s cubic-bezier(.47,0,.745,.715);
+    -webkit-transition: opacity 0.5s cubic-bezier(.47,0,.745,.715);
+    -o-transition: opacity 0.5s cubic-bezier(.47,0,.745,.715);
+}

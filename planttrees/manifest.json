@@ -1,0 +1,19 @@
+{
+  "name": "planttrees",
+  "description": "Make the current page red",
+  "version": "2.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "css": ["css/planttrees.css"],
+      "js": ["jquery.js","CMUtils.js","modernizr.js", "TweenLite.min.js", "CMDetect.js", "StageController.js", "planttrees.js", "init.js", "animateController.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Make this page red"
+  },
+  "manifest_version": 2
+}

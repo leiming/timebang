@@ -1,0 +1,103 @@
+#panorama-home {
+}
+
+#panorama-container {
+    pointer-events:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 804px;
+    height: 804px;
+    margin: -402px 0 0 -402px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 500px;
+    -moz-transform-style: preserve-3d;
+    -moz-perspective: 500px;
+    z-index: 1;
+}
+
+#panorama-position {
+    width: 804px;
+    height: 804px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(500px);
+    -moz-transform-style: preserve-3d;
+    -moz-transform: translateZ(500px);
+}
+
+
+#panorama-cube {
+    width: 804px;
+    height: 804px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+
+#panorama-cube > .panorama-face > img {
+    width: 804px;
+    height: 804px;
+    /* fixed ff 3d bug */
+    -moz-transform-style: preserve-3d;
+}
+
+.panorama-face {
+    position: absolute;
+    width: 804px;
+    height: 804px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    /* fixed ff 3d bug */
+    -moz-transform-style: preserve-3d;
+    z-index: 2;
+}
+
+
+
+#panorama-cube-top {
+    top: -402px;
+    left: -2px;
+}
+
+#panorama-cube-bottom {
+    -webkit-transform: rotateX(-90deg) rotateY(180deg);
+    -moz-transform: rotateX(-90deg) rotateY(180deg);
+    top: 398px;
+    left: -2px;
+}
+
+#panorama-cube-front {
+    -webkit-transform: translateZ(-400px);
+    -moz-transform: translateZ(-400px);
+    top: -2px;
+    left: -2px;
+}
+
+#panorama-cube-back {
+    -webkit-transform: translateZ(400px) rotateY(180deg);
+    -moz-transform: translateZ(400px) rotateY(180deg);
+    top: -2px;
+    left: -2px;
+}
+
+#panorama-cube-left {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    left: 398px;
+    top: -2px;
+}
+
+#panorama-cube-right {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    left: -402px;
+    top: -2px;
+}
+
+#panorama-guide {
+    position: absolute;
+    z-index: 99;
+    display: none;
+}

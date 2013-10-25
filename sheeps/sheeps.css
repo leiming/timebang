@@ -1,0 +1,10 @@
+.sheeps{
+    width:154px;
+    height:117px;
+    background-image:url(http://fff.cmiscm.com/contents/sheeps/sheep-ani.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+    position:absolute;
+    left:0;
+    top:0
+}

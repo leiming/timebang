@@ -1,0 +1,75 @@
+/* triangulation */
+#triangulation-con {
+    position: absolute;
+    width: 476px;
+    height: 476px;
+    z-index: 1;
+}
+
+#triangulation-img {
+    width: 466px;
+    height: 466px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#triangulation-img-move {
+    width: 3728px;
+    height: 466px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.triangulation-img-item {
+    width: 466px;
+    height: 466px;
+    position: relative;
+    float: left;
+}
+
+#triangulation-world {
+    width: 466px;
+    height: 466px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+#triangulation-mask {
+    position: absolute;
+    z-index: 8;
+    width: 476px;
+    height: 476px;
+    left: 0;
+    top: 0;
+    background: url(triang-mask.png) no-repeat;
+}
+
+#triangulation-loading {
+    position: absolute;
+    z-index: 10;
+    width: 1px;
+    height: 1px;
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+
+#triangulation-btcon {
+    width: 322px;
+    height: 68px;
+    margin-left: 77px;
+    display: none;
+}
+
+.triangulation-bt {
+    width: 46px;
+    height: 68px;
+    float: left;
+    cursor: pointer;
+    background: url(triang-bt.png) no-repeat;
+}
