@@ -3,7 +3,7 @@ var Sheeps = Sheeps || ( function () {
         _isDrag = false, seletedSheep;
 
     function init() {
-        $con = $("#sheepCon");
+        $con = $("body");
         _total = 0;
         _sheeps = [];
     }
@@ -13,14 +13,14 @@ var Sheeps = Sheeps || ( function () {
         _isDrag = false;
         curTime = new Date().getTime();
         requestAnimationFrame( animate );
-        addEvent();
+        //addEvent();
         addSheep();
     }
 
     function addSheep() {
         if (_isPause) return;
         getSheep();
-        TweenLite.delayedCall(1 + Math.random(), addSheep);
+        //TweenLite.delayedCall(1 + Math.random(), addSheep);
     }
     function getSheep() {
         var i, sheep;
@@ -57,13 +57,13 @@ var Sheeps = Sheeps || ( function () {
         _isPause = false;
         curTime = new Date().getTime();
         requestAnimationFrame( animate );
-        addEvent();
+        //addEvent();
         addSheep();
     }
 
     function resize() {
-        _sw = StageController.stageWidth;
-        _sh = StageController.stageHeight;
+        _sw = $con.width();
+        _sh = $con.height();
         var i, item;
         for (i=0; i<_total; i++) {
             item = _sheeps[i];
@@ -166,10 +166,7 @@ var Sheeps = Sheeps || ( function () {
     }
 } )();
 
-
-
 (function(window) {
-
     function TheSheep(con, index) {
         this.$con = con;
         this.cur = 0;
@@ -210,7 +207,7 @@ var Sheeps = Sheeps || ( function () {
         },
         up : function() {
             this.isPress = false;
-            this.targetY = (StageController.stageHeight - 220);
+            this.targetY = ($con.height() - 220);
             this.by = 0;
             /*
              var time = Math.abs(this.ty - this.targetY) * 0.0011;
@@ -259,10 +256,10 @@ var Sheeps = Sheeps || ( function () {
             this.show = true;
             this.isPress = false;
             this.speed = (0.5 + (Math.random()*(12-5) + 5)) | 0;
-            this.tx = StageController.stageWidth + 20;
+            this.tx = $con.width() + 20;
             this.$dom.style.zIndex = this.speed;
             this.$dom.style.left = this.tx + 'px';
-            this.resize(StageController.stageHeight);
+            this.resize($con.height());
             this.$con.append(this.$dom);
         },
         dispose : function() {
@@ -278,3 +275,7 @@ var Sheeps = Sheeps || ( function () {
     window.TheSheep = TheSheep;
 
 })(window);
+
+$con = $("body");
+Sheeps.init();
+var iID = setInterval(Sheeps.start, 1500);
